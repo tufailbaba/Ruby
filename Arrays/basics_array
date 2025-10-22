@@ -1,0 +1,11 @@
+arr = [1,2,34, 'string']
+# puts arr
+#creating arrays in ruby
+array =[]
+array = Array.new
+array = Array.new()
+
+array = Array.new(10)
+
+array = Array.new(10,'String')
+puts array
