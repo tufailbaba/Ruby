@@ -1,34 +1,9 @@
 class Student 
   attr_reader :name, :email, :contact
+  attr_writer :name, :email, :contact
   def initialize(name, email, contact)
     @name = name
     @email = email
-    @contact = contact
-  end
-
-  # getter methods
-  def name
-    @name
-  end
-
-  def email
-    @email
-  end
-
-  def contact
-    @contact
-  end
-
-  # setter methods
-  def name=(name)
-    @name = name
-  end
-
-  def email=(email)
-    @email = email
-  end
-
-  def contact=(contact)
     @contact = contact
   end
 end
