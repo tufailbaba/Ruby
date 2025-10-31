@@ -1,0 +1,8 @@
+#Inserting elements in array
+array = Array.new
+array << 100 <<200 <<"String" <<600
+
+#puts array
+
+#push method
+

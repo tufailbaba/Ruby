@@ -8,4 +8,4 @@ array = Array.new()
 array = Array.new(10)
 
 array = Array.new(10,'String')
-puts array
+array = Array.new()
