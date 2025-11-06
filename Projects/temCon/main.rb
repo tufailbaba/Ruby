@@ -13,9 +13,13 @@ temperature = gets.chomp.to_f
 #if the unit is farenheit, convert to celsuis
 if unit_of_measure == "f"
 temperature = (temperature -32)* 5/9
+temperature = temperature.round(2)
 puts "The temperature in celsuis is #{temperature}."
 else
   #otherwise, convert to farenheit
   temperature = (temperature * 9/5) +32
+  temperature = temperature.round(2)
   puts "The temperature in farenheit is #{temperature}."
 end
+
+#practice it by my self
