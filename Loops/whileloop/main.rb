@@ -16,9 +16,9 @@ end
 
 puts 'Enter your favorite player'
 puts 'Press q to quit!'
-user_input = gets.chomp
+user_input = gets.chomp.downcase
 
-while user_input.downcase != 'q'
+while user_input != 'q'
   puts "You typed #{user_input}"
   puts "Whats your favorite player?"
   puts "press q to quite!"
