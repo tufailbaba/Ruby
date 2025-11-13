@@ -1,56 +1,68 @@
-  # we want a calculator that can perform basic arithmetic operations 
-  # such as addition, subtraction, multiplication, and division.
-  # It should get user input
-  # and display the result.
-  # we also want  to continue performing calculations until the user decides to exit.
-  # user can quit at any time by entering 'q' or 'Q'.
+# We want a calculator that can do the following:
+# 1. Addition
+# 2. Subtraction
+# 3. Multiplication
+# 4. Division
 
-  def main()
-  puts"Welcome to the calculator"
-  puts"What would you like to do?"
-  puts"1.Addition"
-  puts"2. Subtraction"
-  puts"3. Multiplication"
-  puts"4. Division"
-  puts"Q. Quit"
+# It should get user input
+# It should print the result
 
-  command = gets.chomp.downcase
-  if command == 'q'
-    puts"Goodbye!"
+# We also want to continually ask for input.
+# A user can do multiple calculations per run.
+# A user can quit by typing Q or q.
+require_relative "math/operations"
+require_relative "input/user_input"
+require_relative "validations/validate_input"
+
+def print_welcome_message()
+  puts "Welcome to the calculator"
+  puts "What would you like to do?"
+  puts "1. Addition"
+  puts "2. Subtraction"
+  puts "3. Multiplication"
+  puts "4. Division"
+  puts "Q. Quit"
+end
+
+def check_for_quit(command)
+  if command == "q"
+    puts "Goodbye!"
+    return true
   end
-  if command == '1'
-    puts"You chose Addition"
-    elsif command == '2'
-      puts"You chose Subtraction"
-    elsif command == '3'
-      puts"You chose Multiplication"
-    elsif command == '4'
-      puts"You chose Division"
-    else
-      puts"I dont understand that command"
-      return
-    end
-  puts"Enter first number:"
-  num1 = gets.chomp.to_f
-  puts"Enter second number:"
-  num2 = gets.chomp.to_f
-    if command == '1'
-      result = num1 + num2
-      puts"The result is #{result}"
-    elsif command == '2'
-      result = num1 - num2
-      puts"The result is #{result}"
-    elsif command == '3'
-      result = num1 * num2
-      puts"The result is #{result}"
-    elsif command == '4'
-      if num2 == 0
-        puts"Error: Division by zero is not allowed."
-      else
-        result = num1 / num2
-        puts"The result is #{result}"
-      end
+end
+
+def calculate(first_number, second_number, command)
+  if command == "1"
+    add(first_number, second_number)
+  elsif command == "2"
+    subtract(first_number, second_number)
+  elsif command == "3"
+    multiply(first_number, second_number)
+  elsif command == "4"
+    divide(first_number, second_number)
+  end
+end
+
+def calculator_loop()
+  while true
+    print_welcome_message()
+    command = get_user_input()
+
+    if invalid_command(command)
+      next
     end
 
+    if check_for_quit(command)
+      break
+    end
+
+    first_number, second_number = get_user_numbers()
+    calculate(first_number, second_number, command)
   end
-  main()
+end
+
+def main()
+  calculator_loop()
+end
+
+main()
