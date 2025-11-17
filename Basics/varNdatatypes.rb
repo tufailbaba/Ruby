@@ -12,3 +12,4 @@ puts "Hi my name is " +name1+" and i am "+age1.to_s+" years old"
 
 answer = 42
 puts "answer to life is " + answer.to_s
+
