@@ -22,3 +22,14 @@ def language (lan1= "Ruby" , lan2= "Python")
 end
 language()
 language("C","C++")
+
+#Returning values from methods in Ruby
+
+def ret 
+  i=1
+  o=2
+  q=3
+  return i,o,q
+end
+x = ret
+puts x
