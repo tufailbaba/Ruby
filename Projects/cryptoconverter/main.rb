@@ -45,4 +45,4 @@ def menu
   end
 end
 
-menu
+menu()
