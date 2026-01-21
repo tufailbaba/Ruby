@@ -33,3 +33,14 @@ def ret
 end
 x = ret
 puts x
+
+
+#Passing multiple parameter to a single method in ruby
+
+def sample (*test)
+  puts"The number of parameters is #{test.length}"
+  for i in 0...test.length
+    puts "The parameters are #{test[i]}"
+  end
+  end
+  sample("Tufail","Baba",21)
