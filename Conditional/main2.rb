@@ -23,3 +23,6 @@ x = false
 
  isAdmin = false
  puts "You are not admin" unless isAdmin
+
+ verified = 1
+ puts "You are not verified " unless verified
