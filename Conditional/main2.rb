@@ -1,5 +1,5 @@
 #Unless conditional example
-x = 10
+x = 8
 unless x>9
   puts "X is less than 9"
   else
@@ -15,4 +15,6 @@ unless x>9
       puts "You can enter"
     end
     
-
+#Unless modifier 
+x = false
+ puts "Hi Tufail" unless x
