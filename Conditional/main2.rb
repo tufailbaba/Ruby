@@ -18,3 +18,8 @@ unless x>9
 #Unless modifier 
 x = false
  puts "Hi Tufail" unless x
+
+ #problems
+
+ isAdmin = false
+ puts "You are not admin" unless isAdmin
