@@ -38,8 +38,15 @@ class Rectangle
     @length = l
     @breadth = b
   end
+  def setlenght=(l)
+    @length = l
+  end
+  
+  def setwidth=(b)
+    @length = l
+  end
 
-  def getlength
+ def getlength
     @length
   end
 
