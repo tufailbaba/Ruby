@@ -19,3 +19,15 @@ gs.setHeight = 10
 gs.setwidth = 20
 puts gs.showheight
 puts gs.showwidth
+
+#Simple way
+class GetterSetters
+  attr_accessor :width1, :height1
+end
+
+gs = GetterSetters.new
+gs.width1 = 200
+gs.height1 = 100
+
+puts gs.width1
+puts gs.height1
