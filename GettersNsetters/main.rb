@@ -31,3 +31,26 @@ gs.height1 = 100
 
 puts gs.width1
 puts gs.height1
+
+#More problems
+class Rectangle 
+  def initialize(l, b)
+    @length = l
+    @breadth = b
+  end
+
+  def getlength
+    @length
+  end
+
+  def getbreadth
+    @breadth
+  end
+end
+
+rect = Rectangle.new(25, 30)
+x = rect.getlength
+y = rect.getbreadth
+
+puts "The value of Length is #{x}"
+puts "The value of Breadth is #{y}"
