@@ -6,3 +6,13 @@ unless x>9
     puts "X is greater than 9"
   end
 
+  #Problems
+
+  access = true
+  unless access = true
+    puts "You cann't enter here"
+    else 
+      puts "You can enter"
+    end
+    
+
