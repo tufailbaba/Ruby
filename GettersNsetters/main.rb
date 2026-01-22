@@ -38,26 +38,35 @@ class Rectangle
     @length = l
     @breadth = b
   end
-  def setlenght=(l)
-    @length = l
+  def setlenght=(value)
+    @length = value
   end
   
-  def setwidth=(b)
-    @length = l
+  def setwidth=(value)
+    @width = value
   end
 
  def getlength
-    @length
+    @length 
   end
 
   def getbreadth
     @breadth
   end
+
+  def area 
+    @length*@breadth
+  end
+
 end
 
-rect = Rectangle.new(25, 30)
+rect = Rectangle.new(25,90)
+rect.setlenght = 30
+rect.setwidth  = 30
 x = rect.getlength
 y = rect.getbreadth
+z = rect.area
 
 puts "The value of Length is #{x}"
 puts "The value of Breadth is #{y}"
+puts "The area of rectangle is #{z}"
