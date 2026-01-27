@@ -17,3 +17,15 @@ end
 sayhello{
   puts "Its the yeild portion of block"
 }
+
+#Block with Parameter
+
+def heyLala
+  puts "You in Head"
+  yield("Tufail", 21)
+  puts "End of block"
+end
+
+heyLala do |str, num|
+  puts "Middle section of block #{str} #{num}"
+end
