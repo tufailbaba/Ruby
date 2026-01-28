@@ -21,11 +21,22 @@ sayhello{
 #Block with Parameter
 
 def heyLala
-  puts "You in Head"
+  puts "You are in Head"
   yield("Tufail", 21)
   puts "End of block"
 end
 
 heyLala do |str, num|
   puts "Middle section of block #{str} #{num}"
+end
+
+#Another Example of Block with Parameter
+def more 
+  puts "This will be executed frist"
+  yield("Block", 1)
+  puts"Last section of block"
+end
+
+more do |name, n|
+  puts "hey my #{name} is #{n}"
 end
