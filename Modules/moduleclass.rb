@@ -21,7 +21,10 @@ module Modulemine
   puts "Hey i must be called"
  end
  def callmetoo
-  puts "Hey i must also be called"
+  puts "Hey i must also be called aslo"
+ end
+ def alsome
+  puts "Dont forget me"
  end
 end
 end
