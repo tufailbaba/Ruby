@@ -20,6 +20,9 @@ module Modulemine
  def callme
   puts "Hey i must be called"
  end
+ def callmetoo
+  puts "Hey i must also be called"
+ end
 end
 end
 obj2 = Modulemine::MyClass.new
