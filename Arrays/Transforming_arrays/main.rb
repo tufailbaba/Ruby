@@ -3,8 +3,9 @@ arr.each do |x|
   puts x
 end
 
-
-puts arr[2]
-puts arr[-1]
 arr[0]= "Tufail"
-puts arr[0]
+puts arr
+
+arr.push ("Baba", "lala")
+puts arr
+arr.pop
