@@ -6,3 +6,5 @@ end
 
 puts arr[2]
 puts arr[-1]
+arr[0]= "Tufail"
+puts arr[0]
