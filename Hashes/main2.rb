@@ -12,3 +12,7 @@ puts countries ['IN']
 countries.each do |x|
   puts x
 end
+
+countries.each do |k,v|
+  puts "#{k}: is the key => #{v} is the value"
+end
