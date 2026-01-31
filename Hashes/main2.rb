@@ -11,3 +11,4 @@ puts countries ['IN']
 
 countries.each do |x|
   puts x
+end
