@@ -19,3 +19,6 @@ end
 
 countries.each_key {|k| puts "Key: #{k}"}
 countries.each_value {|v| puts "Value: #{v}"}
+newcountries = countries.invert
+puts newcountries.keys.inspect
+puts newcountries.values.inspect
