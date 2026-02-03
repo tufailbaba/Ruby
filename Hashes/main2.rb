@@ -22,3 +22,13 @@ countries.each_value {|v| puts "Value: #{v}"}
 newcountries = countries.invert
 puts newcountries.keys.inspect
 puts newcountries.values.inspect
+# Output:
+# 3 
+# ["IN", "US", "NO"]
+# ["India", "United States", "NORWAY"]
+# India
+# ["IN", "India"]
+# US: is the key => United States is the value
+# ["IN", "US", "NO"]
+# Value: India
+# ["India", "United States", "NORWAY"]
