@@ -10,6 +10,9 @@ class Parent
 end
 
 class Child < Parent
+   def return_area
+   return"Area from Child class #{ @width * @height}"
+  end
 end
 
 child = Child.new(10, 20)
