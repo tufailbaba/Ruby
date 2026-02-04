@@ -4,11 +4,15 @@ class Tester
     @num =  num 
   end
   def +(other)
-    return @num+other
+    return self.num+other.num
+  end
+  def *(other)
+    return self.num*other.num
   end
 
 
 end
 
 test = Tester.new(5)
-puts test+5
+test2 = Tester.new(9)
+puts test*test2
