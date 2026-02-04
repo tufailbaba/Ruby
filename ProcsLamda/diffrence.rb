@@ -4,7 +4,9 @@ def my_method
   puts "Before Proc"
   my_proc = proc{
     puts "Inside proc"
-    return
+    return #it will reten
+    #break - error
+
   }
   my_proc.call
     puts "After proc"
@@ -18,6 +20,7 @@ def my_method1
   my_proc = lambda{
     puts "Inside proc"
     return
+    #break -- it will jump
   }
   my_proc.call
     puts "After proc"
