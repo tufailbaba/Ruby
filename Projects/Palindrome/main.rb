@@ -11,7 +11,7 @@ if  word == word.reverse
   end
   puts "Do you want to check another word? (yes/no)"
   choice = gets.chomp.downcase
-end while choice == "yes"
+end until choice == "no"
 
 
  
